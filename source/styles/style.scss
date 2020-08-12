@@ -1,0 +1,7 @@
+// https://github.com/csstools/postcss-normalize#readme
+@import-normalize;
+
+@import "./partials/variables";
+@import "./partials/mixins";
+
+@import "./blocks/*";
