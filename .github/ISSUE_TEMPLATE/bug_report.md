@@ -26,9 +26,9 @@ If applicable, add screenshots to help explain your problem.
 -->
 
 **Please complete the following information:**
- - os: <!--[e.g. Manjaro 20.0.3, Windows 10 1904]-->
- - nodejs version <!--[e.g. 14.2.0]-->
- 
+  - os: <!--[e.g. Manjaro 20.0.3, Windows 10 1904]-->
+  - nodejs version <!--[e.g. 14.2.0]-->
+
 <!--
 **Additional context:**
 Add any other context about the problem here.
