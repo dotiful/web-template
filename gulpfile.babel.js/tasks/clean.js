@@ -1,10 +1,14 @@
 "use strict";
 
-import { gulp, task } from "gulp";
-import del            from "del";
+import { task } from "gulp";
+import del      from "del";
 
 function clean() {
-  return del(`${cfg.build.root}/*`);
+  return del(
+    cfg.isProd
+      ? cfg.build.root
+      : [cfg.build.styles, cfg.build.scripts, cfg.build.video]
+  );
 }
 
 clean.description = 'Removes the destination folder';

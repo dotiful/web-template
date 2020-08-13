@@ -6,12 +6,12 @@ import realFavicon         from "gulp-real-favicon";
 import gulpif              from "gulp-if";
 import debug               from "gulp-debug";
 
-const FAVICON_DATA_FILE = `${cfg.src.images.favicons}/faviconData.json`;
+const FAVICON_DATA_FILE = `${cfg.src.images.favicons.root}/faviconData.json`;
 
 function faviconsGenerate(done) {
   realFavicon.generateFavicon({
-    masterPicture: cfg.src.images.favicon,
-    dest: cfg.src.images.favicons,
+    masterPicture: cfg.src.images.favicons.master,
+    dest: cfg.src.images.favicons.root,
     iconsPath: './img/favicons/',
     design: {
       ios: {
@@ -76,7 +76,6 @@ function faviconsGenerate(done) {
 faviconsGenerate.description = 'Generate the icons';
 task('favicons-generate', faviconsGenerate)
 
-
 function faviconsInjectMarkups() {
   return src(cfg.src.html)
   .pipe(realFavicon.injectFaviconMarkups(JSON.parse(fs.readFileSync(FAVICON_DATA_FILE)).favicon.html_code))
@@ -96,6 +95,7 @@ function faviconsCheckForUpdate(done) {
       throw err;
     }
   });
+  done();
 }
 
 faviconsCheckForUpdate.description = 'Check for updates on RealFaviconGenerator';
