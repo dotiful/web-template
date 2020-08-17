@@ -31,22 +31,13 @@ const pluginsWebp = [
   // alphaQuality: 95,   // 100
 ];
 
-function favicons() {
-  return src(cfg.src.images.favicons.all)
-    .pipe(changed(cfg.build.favicons))
-    .pipe(imagemin(pluginsImagemin))
-    .pipe(dest(cfg.build.favicons))
-    .pipe(gulpif(cfg.debug, debug({title: 'favicons:'})))
-    // .on("end", browserSync.reload);
-}
-
 function images() {
   return src(cfg.src.images.all)
     .pipe(changed(cfg.build.images))
     .pipe(imagemin(pluginsImagemin))
     .pipe(dest(cfg.build.images))
     .pipe(gulpif(cfg.debug, debug({title: 'images:'})))
-    // .on("end", browserSync.reload);
+    .on("end", browserSync.reload);
 }
 
 function webp() {
@@ -58,7 +49,7 @@ function webp() {
     }))
     .pipe(dest(cfg.build.images))
     .pipe(gulpif(cfg.debug, debug({title: 'webp:'})))
-    // .on("end", browserSync.reload);
+    .on("end", browserSync.reload);
 }
 
 function sprites() {
@@ -67,11 +58,8 @@ function sprites() {
     .pipe(svgstore({ inlineSvg: true }))
     .pipe(rename('svg-sprite.svg'))
     .pipe(dest(cfg.build.images))
-    // .on("end", browserSync.reload);
+    .on("end", browserSync.reload);
 }
-
-favicons.description = 'Copy favicons to build';
-task(favicons);
 
 task(images);
 images.description  = 'Minify png/jpeg/gif/svg images';

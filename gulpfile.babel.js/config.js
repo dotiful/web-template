@@ -26,7 +26,7 @@ module.exports = {
       ],
       favicons: {
         all: `${dirs.src}/img/favicons/**/*`,
-        root: `${dirs.src}/img/favicons/`,
+        root: `${dirs.src}/img/favicons`,
         master:  `${dirs.src}/img/favicons/favicon.png`,
       },
     },

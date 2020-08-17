@@ -1,5 +1,7 @@
 "use strict";
 
+// https://www.browsersync.io/docs/options
+
 import { src, dest, task } from "gulp";
 import browsersync         from "browser-sync";
 import yargs               from "yargs";

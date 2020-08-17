@@ -12,7 +12,7 @@ function fonts() {
     .pipe(dest(cfg.build.fonts));
 }
 
-fonts.description = 'Copy fonts';
+fonts.description = 'Copy fonts to the destination folder';
 task(fonts);
 
 function fontsConvert() {
