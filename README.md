@@ -1,4 +1,5 @@
 [![](https://github.com/dotiful/web-template/workflows/EditorConfig/badge.svg)](https://github.com/dotiful/web-template/actions?query=workflow%3AEditorConfig)
+[![](https://github.com/dotiful/web-template/workflows/dependabot-auto-merge/badge.svg)](https://github.com/dotiful/web-template/actions?query=workflow%3Adependabot-auto-merge)
 [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-v2.0%20adopted-ff69b4.svg)](.github/code_of_conduct.md) 
 
 * [gulp-starter-kit](https://github.com/justcoded/web-starter-kit)
