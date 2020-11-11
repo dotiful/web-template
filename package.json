@@ -11,7 +11,7 @@
     "@babel/preset-env": "^7.12.1",
     "@babel/register": "^7.12.1",
     "@wulechuan/printer-for-errors-of-gulp-plugins": "^1.0.0",
-    "autoprefixer": "^10.0.1",
+    "autoprefixer": "^10.0.2",
     "browser-sync": "^2.26.13",
     "del": "^6.0.0",
     "editorconfig-checker": "^3.3.0",
