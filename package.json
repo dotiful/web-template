@@ -8,7 +8,7 @@
   },
   "devDependencies": {
     "@babel/core": "^7.12.13",
-    "@babel/preset-env": "^7.12.11",
+    "@babel/preset-env": "^7.12.13",
     "@babel/register": "^7.12.13",
     "@wulechuan/printer-for-errors-of-gulp-plugins": "^1.0.0",
     "autoprefixer": "^10.2.4",
