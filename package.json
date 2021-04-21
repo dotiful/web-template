@@ -7,7 +7,7 @@
     "normalize.css": "^8.0.1"
   },
   "devDependencies": {
-    "@babel/core": "^7.13.8",
+    "@babel/core": "^7.13.16",
     "@babel/preset-env": "^7.13.9",
     "@babel/register": "^7.13.8",
     "@wulechuan/printer-for-errors-of-gulp-plugins": "^1.0.0",
