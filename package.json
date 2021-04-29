@@ -42,7 +42,7 @@
     "postcss-sort-media-queries": "^1.31.21",
     "require-dir": "^1.2.0",
     "stylelint": "^13.13.0",
-    "stylelint-config-standard": "^21.0.0"
+    "stylelint-config-standard": "^22.0.0"
   },
   "scripts": {
     "start": "gulp",
